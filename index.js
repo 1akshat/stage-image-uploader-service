@@ -17,6 +17,11 @@ const app = express();
  */
 const port = process.env.PORT || 3000;
 
+// Serve the upload page at the root path
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/src/views/upload.html');
+  });
+
 // imageRoutes for handling requests under the '/v1/images' endpoint
 app.use('/v1/images', imageRoutes);
 
