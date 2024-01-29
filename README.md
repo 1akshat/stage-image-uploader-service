@@ -72,3 +72,11 @@ Dockerize the application for easy deployment. Example commands:
 docker build -t stage-image-uploader .
 docker run -p 3000:3000 -d stage-image-uploader
 ```
+
+## Contributing
+
+Feel free to contribute by opening issues or pull requests. See CONTRIBUTING.md for details.
+
+## License
+
+This project is licensed under the MIT License.
