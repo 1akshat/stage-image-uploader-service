@@ -1,8 +1,8 @@
-# Contributing to Express.js Image Uploader
+# Contributing to Express.js Image Uploader (STAGE)
 
 👍 Thank you for considering contributing to Express.js Image Uploader! Contributions are welcome from everyone.
 
-The goal of this project is to provide a simple and efficient image uploader service using Express.js, AWS S3, and local MySQL. If you have ideas, bug fixes, or improvements, we'd love to hear from you.
+The goal of this project is to provide a simple and efficient image uploader service using Express.js, AWS S3 etc. If you have ideas, bug fixes, or improvements, we'd love to hear from you.
 
 ## How to Contribute
 
@@ -10,8 +10,8 @@ The goal of this project is to provide a simple and efficient image uploader ser
 2.  Clone the forked repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/express-image-uploader.git
-    cd express-image-uploader
+    git clone https://github.com/1akshat/stage-image-uploader-service.git
+    cd stage-image-uploader-service
     ```
 
 3.  Create a new branch for your feature or bug fix:

@@ -1,4 +1,4 @@
-# Express.js Image Uploader
+# Express.js Image Uploader (STAGE)
 
 This is a simple Express.js application for uploading and compressing images. It utilizes AWS S3 for storing compressed images.
 
@@ -26,13 +26,13 @@ Before running the application, make sure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/express-image-uploader.git
+   git clone https://github.com/1akshat/stage-image-uploader-service.git
    ```
 
 2. **Install dependencies::**
 
    ```bash
-   cd express-image-uploader
+   cd stage-image-uploader-service
    npm install
    ```
 
