@@ -17,7 +17,7 @@ const app = express();
  */
 const port = process.env.PORT || 3000;
 
-// Use the imageRoutes for handling requests under the '/v1/images' endpoint
+// imageRoutes for handling requests under the '/v1/images' endpoint
 app.use('/v1/images', imageRoutes);
 
 
