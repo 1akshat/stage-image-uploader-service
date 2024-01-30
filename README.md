@@ -43,6 +43,7 @@ Before running the application, make sure you have the following installed:
    ```
 
 4. **Access the application at http://localhost:3000.**
+   The application is also publicly hosted at http://3.95.180.42/.
 
 ## Configuration
 
@@ -73,6 +74,10 @@ docker build -t stage-image-uploader .
 docker run -p 3000:3000 -d stage-image-uploader
 ```
 
+## Potential Improvements
+
+- Database Integration: Introduce a database to store meta information about uploaded images, including user mappings.
+
 ## Contributing
 
 Feel free to contribute by opening issues or pull requests. See CONTRIBUTING.md for details.
@@ -80,3 +85,11 @@ Feel free to contribute by opening issues or pull requests. See CONTRIBUTING.md 
 ## License
 
 This project is licensed under the MIT License.
+
+## Tracking
+
+- [x] Write tests for your application.
+
+- [x] Dockerization: Containerize the application so that it can be run locally using Docker.
+
+- [x] CI/CD Pipeline: Implement a CI/CD pipeline using tools like Jenkins, GitHub Actions, or GitLab CI. The CD pipeline should deploy the application to whatever hosting provider you choose to host your service.
