@@ -85,3 +85,11 @@ Feel free to contribute by opening issues or pull requests. See CONTRIBUTING.md 
 ## License
 
 This project is licensed under the MIT License.
+
+## Tracking
+
+- [x] Write tests for your application.
+
+- [x] Dockerization: Containerize the application so that it can be run locally using Docker.
+
+- [x] CI/CD Pipeline: Implement a CI/CD pipeline using tools like Jenkins, GitHub Actions, or GitLab CI. The CD pipeline should deploy the application to whatever hosting provider you choose to host your service.
