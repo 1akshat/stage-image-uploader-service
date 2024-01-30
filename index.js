@@ -17,6 +17,9 @@ const app = express();
  */
 const port = process.env.PORT || 3000;
 
+// Serve static files from the 'views' directory
+app.use(express.static('views', { 'extensions': ['html', 'htm', 'js'] }));
+
 // Serve the upload page at the root path
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/src/views/upload.html');
