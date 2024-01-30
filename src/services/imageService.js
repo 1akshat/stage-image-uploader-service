@@ -4,6 +4,20 @@ const sharp = require('sharp');
 const awsUtil = require('../utils/awsUtil');
 
 /**
+ * Generate a unique name for the image by appending a timestamp.
+ *
+ * @function
+ * @private
+ * @param {string} originalName - The original name of the uploaded file.
+ * @returns {string} - The unique name for the image.
+ */
+function generateUniqueName(originalName) {
+    const timestamp = Date.now();
+    const extension = originalName.split('.').pop(); // Get the file extension
+    return `${timestamp}.${extension}`;
+}
+
+/**
  * Read, compress, and upload an image file to Amazon S3.
  *
  * @function
@@ -16,8 +30,12 @@ const awsUtil = require('../utils/awsUtil');
  * @returns {Promise<string>} - A Promise that resolves with the S3 path after the image is uploaded.
  * @throws {Error} - Throws an error if there is an issue processing the image upload.
  */
-exports.compressAndUpload = async (file) => {
+exports.compressAndUpload = async (file, uniqueName) => {
   try {
+
+    // Generate a unique name for the image
+    const uniqueName = generateUniqueName(file.originalname);
+
     // Read the file buffer using the file path
     const imageBuffer = await fs.readFile(file.path);
 
@@ -25,7 +43,7 @@ exports.compressAndUpload = async (file) => {
     const compressedImageBuffer = await compressImage(imageBuffer, file.mimetype);
 
     // Upload the compressed image to S3
-    const s3Path = await awsUtil.uploadToS3(compressedImageBuffer, file.originalname);
+    const s3Path = await awsUtil.uploadToS3(compressedImageBuffer, uniqueName);
 
     console.log(s3Path);
 
