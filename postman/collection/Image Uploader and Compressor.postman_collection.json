@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "15e10dfd-fffa-4423-83e9-89f52e801ff9",
+		"name": "Image Uploader and Compressor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1007916"
+	},
+	"item": [
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/akshatuppal/Documents/Akki/Personal/Photos/akshat.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://3.95.180.42/v1/images/upload",
+					"protocol": "http",
+					"host": [
+						"3",
+						"95",
+						"180",
+						"42"
+					],
+					"path": [
+						"v1",
+						"images",
+						"upload"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/Users/akshatuppal/Documents/Akki/Personal/Photos/akshat.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://3.95.180.42/v1/images/upload",
+							"protocol": "http",
+							"host": [
+								"3",
+								"95",
+								"180",
+								"42"
+							],
+							"path": [
+								"v1",
+								"images",
+								"upload"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Image uploaded and compressed successfully!\",\n    \"s3Path\": \"https://stage-dev-akki.s3.amazonaws.com/compressed/akshat.png\"\n}"
+				}
+			]
+		}
+	]
+}
