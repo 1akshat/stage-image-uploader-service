@@ -43,7 +43,6 @@ Before running the application, make sure you have the following installed:
    ```
 
 4. **Access the application at http://localhost:3000.**
-   The application is also publicly hosted at http://3.95.180.42/.
 
 ## Configuration
 
@@ -77,6 +76,12 @@ docker run -p 3000:3000 -d stage-image-uploader
 ## Potential Improvements
 
 - Database Integration: Introduce a database to store meta information about uploaded images, including user mappings.
+
+## Hosting Information
+
+This application is hosted on an Amazon EC2 instance on AWS.
+
+- **Public URL:** [http://3.95.180.42/](http://3.95.180.42/)
 
 ## Contributing
 
