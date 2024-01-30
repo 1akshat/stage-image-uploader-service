@@ -43,6 +43,7 @@ Before running the application, make sure you have the following installed:
    ```
 
 4. **Access the application at http://localhost:3000.**
+   The application is also publicly hosted at http://3.95.180.42/.
 
 ## Configuration
 
@@ -72,6 +73,10 @@ Dockerize the application for easy deployment. Example commands:
 docker build -t stage-image-uploader .
 docker run -p 3000:3000 -d stage-image-uploader
 ```
+
+## Potential Improvements
+
+- Database Integration: Introduce a database to store meta information about uploaded images, including user mappings.
 
 ## Contributing
 
